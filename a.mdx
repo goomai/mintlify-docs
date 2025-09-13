@@ -1,5 +1,47 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: Environment Variable Test
+description: Testing environment variable rendering
 ---
 
+# Environment Variable Test
+
+## How it should render:
+
+Environment variables like ${NODE_ENV} should be wrapped in backticks in the output.
+
+Multiple variables: ${DATABASE_URL}, ${API_KEY}, and ${PORT} should all be wrapped.
+
+## Test Table
+
+| Pattern Type | Example | Expected Result | Description |
+|--------------|---------|-----------------|-------------|
+| Object Destructuring | { title, path } | `{ title, path }` | Simple destructuring |
+| Multiple Items | { id, name, email } | `{ id, name, email }` | Multiple destructuring |
+| Type Definition | { name: string, email: string } | `{ name: string, email: string }` | Type with colons |
+| Object Literal | { host: localhost, port: 5432 } | `{ host: localhost, port: 5432 }` | Config object |
+| Path Parameter | /users/{userId} | /users/`{userId}` | URL path param |
+| Multiple Paths | /api/{version}/users/{id} | /api/`{version}`/users/`{id}` | Multiple params |
+| Template Variable | {API_KEY} | `{API_KEY}` | Uppercase template |
+| Config Template | {DATABASE_URL} | `{DATABASE_URL}` | Config template |
+| Environment Var | ${NODE_ENV} | `${NODE_ENV}` | Shell env var |
+| Multiple Env Vars | ${DATABASE_URL} and ${API_KEY} | `${DATABASE_URL}` and `${API_KEY}` | Multiple env vars |
+| JSON Object | {"name": "John", "age": 30} | `{"name": "John", "age": 30}` | JSON structure |
+| Already Protected | `{ title, path }` | `{ title, path }` | Should not change |
+| Empty Braces | {} | {} | Should not change |
+
+## Already protected:
+
+If already in backticks: `${NODE_ENV}` should not be double-wrapped.
+
+## In code blocks:
+
+```bash
+export NODE_ENV=production
+echo $NODE_ENV
+```
+
+The code block above should remain unchanged.
+
+## Result:
+
+The preprocessor correctly wraps environment variables, displaying them as inline code to prevent MDX from trying to evaluate them as JavaScript template literals.
