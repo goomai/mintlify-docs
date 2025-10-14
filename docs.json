@@ -22,6 +22,7 @@
           },
           {
             "group": "Essentials",
+            "openapi": "api-referencea/openapi.yaml",
             "pages": [
               "essentials/markdown",
               "essentials/code",
