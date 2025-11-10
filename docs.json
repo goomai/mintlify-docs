@@ -9,42 +9,124 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "versions": [
       {
-        "tab": "Guides",
-        "versions": [
+        "version": "v3.0",
+        "products": [
           {
-            "version": "v2.0",
-            "groups": [
+            "product": "Product A",
+            "description": "Main product documentation",
+            "icon": "box",
+            "tabs": [
               {
-                "group": "Get Started",
-                "pages": [
-                  "upgrade",
-                  "development"
+                "tab": "Guides",
+                "versions": [
+                  {
+                    "version": "v2.0",
+                    "groups": [
+                      {
+                        "group": "Get Started",
+                        "pages": [
+                          "upgrade",
+                          "development"
+                        ]
+                      },
+                      {
+                        "group": "Essentials",
+                        "openapi": "api-referencea/openapi.yaml",
+                        "pages": [
+                          "essentials/markdown",
+                          "essentials/code",
+                          "essentials/images",
+                          "essentials/settings",
+                          "essentials/navigation",
+                          "essentials/reusable-snippets"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "version": "v1.0",
+                    "groups": [
+                      {
+                        "group": "Get Started",
+                        "pages": [
+                          "upgrade",
+                          "development"
+                        ]
+                      }
+                    ]
+                  }
                 ]
               },
               {
-                "group": "Essentials",
-                "openapi": "api-referencea/openapi.yaml",
-                "pages": [
-                  "essentials/markdown",
-                  "essentials/code",
-                  "essentials/images",
-                  "essentials/settings",
-                  "essentials/navigation",
-                  "essentials/reusable-snippets"
+                "tab": "API Reference",
+                "products": [
+                  {
+                    "product": "Core API",
+                    "description": "Main API endpoints and documentation",
+                    "icon": "square-terminal",
+                    "groups": [
+                      {
+                        "group": "API Documentation",
+                        "pages": [
+                          "api-reference/introduction"
+                        ]
+                      },
+                      {
+                        "group": "Endpoint Examples",
+                        "pages": [
+                          "api-reference/endpoint/get",
+                          "api-reference/endpoint/create",
+                          "api-reference/endpoint/delete",
+                          "api-reference/endpoint/webhook"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "product": "Advanced Features",
+                    "description": "Extended API capabilities",
+                    "icon": "rocket",
+                    "groups": [
+                      {
+                        "group": "Endpoint Examples",
+                        "pages": [
+                          "api-reference/endpoint/webhook"
+                        ]
+                      }
+                    ]
+                  }
                 ]
               }
             ]
           },
           {
-            "version": "v1.0",
-            "groups": [
+            "product": "Product B",
+            "description": "Secondary product documentation",
+            "icon": "cube",
+            "tabs": [
               {
-                "group": "Get Started",
-                "pages": [
-                  "upgrade",
-                  "development"
+                "tab": "Guides",
+                "groups": [
+                  {
+                    "group": "Get Started",
+                    "pages": [
+                      "upgrade",
+                      "development"
+                    ]
+                  }
+                ]
+              },
+              {
+                "tab": "API Reference",
+                "groups": [
+                  {
+                    "group": "API Documentation",
+                    "pages": [
+                      "api-reference/introduction"
+                    ]
+                  }
                 ]
               }
             ]
@@ -52,39 +134,42 @@
         ]
       },
       {
-        "tab": "API Reference",
+        "version": "v2.0",
         "products": [
           {
-            "product": "Core API",
-            "description": "Main API endpoints and documentation",
-            "icon": "square-terminal",
-            "groups": [
+            "product": "Product A",
+            "description": "Main product documentation - v2.0",
+            "icon": "box",
+            "tabs": [
               {
-                "group": "API Documentation",
-                "pages": [
-                  "api-reference/introduction"
+                "tab": "Guides",
+                "groups": [
+                  {
+                    "group": "Get Started",
+                    "pages": [
+                      "upgrade",
+                      "development"
+                    ]
+                  },
+                  {
+                    "group": "Essentials",
+                    "pages": [
+                      "essentials/markdown",
+                      "essentials/code",
+                      "essentials/images"
+                    ]
+                  }
                 ]
               },
               {
-                "group": "Endpoint Examples",
-                "pages": [
-                  "api-reference/endpoint/get",
-                  "api-reference/endpoint/create",
-                  "api-reference/endpoint/delete",
-                  "api-reference/endpoint/webhook"
-                ]
-              }
-            ]
-          },
-          {
-            "product": "Advanced Features",
-            "description": "Extended API capabilities",
-            "icon": "rocket",
-            "groups": [
-              {
-                "group": "Endpoint Examples",
-                "pages": [
-                  "api-reference/endpoint/webhook"
+                "tab": "API Reference",
+                "groups": [
+                  {
+                    "group": "API Documentation",
+                    "pages": [
+                      "api-reference/introduction"
+                    ]
+                  }
                 ]
               }
             ]
