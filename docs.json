@@ -154,9 +154,9 @@
       },
       {
         "tab": "cn",
-        "groups": [
+        "menu": [
           {
-            "group": "Product A",
+            "item": "Product A",
             "icon": "box",
             "pages": [
               {
