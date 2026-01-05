@@ -28,9 +28,9 @@
         }
       ]
     },
-    "languages": [
+    "tabs": [
       {
-        "language": "en",
+        "tab": "en",
         "products": [
           {
             "product": "Product A",
@@ -153,7 +153,7 @@
         ]
       },
       {
-        "language": "cn",
+        "tab": "cn",
         "groups": [
           {
             "group": "Product A",
