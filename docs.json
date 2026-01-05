@@ -9,14 +9,33 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "versions": [
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Documentation",
+          "icon": "book-open-cover",
+          "href": "https://mintlify.com/docs"
+        },
+        {
+          "anchor": "Community",
+          "icon": "slack",
+          "href": "https://mintlify.com/community"
+        },
+        {
+          "anchor": "Blog",
+          "icon": "newspaper",
+          "href": "https://mintlify.com/blog"
+        }
+      ]
+    },
+    "languages": [
       {
-        "version": "v3.0",
+        "language": "en",
         "products": [
           {
             "product": "Product A",
-            "description": "Main product documentation",
             "icon": "box",
+            "description": "Main product documentation",
             "tabs": [
               {
                 "tab": "Guides",
@@ -64,8 +83,8 @@
                 "products": [
                   {
                     "product": "Core API",
-                    "description": "Main API endpoints and documentation",
                     "icon": "square-terminal",
+                    "description": "Main API endpoints and documentation",
                     "groups": [
                       {
                         "group": "API Documentation",
@@ -86,8 +105,8 @@
                   },
                   {
                     "product": "Advanced Features",
-                    "description": "Extended API capabilities",
                     "icon": "rocket",
+                    "description": "Extended API capabilities",
                     "groups": [
                       {
                         "group": "Endpoint Examples",
@@ -103,8 +122,8 @@
           },
           {
             "product": "Product B",
-            "description": "Secondary product documentation",
             "icon": "cube",
+            "description": "Secondary product documentation",
             "tabs": [
               {
                 "tab": "Guides",
@@ -134,16 +153,16 @@
         ]
       },
       {
-        "version": "v2.0",
+        "language": "cn",
         "products": [
           {
             "product": "Product A",
-            "description": "Main product documentation - v2.0",
             "icon": "box",
-            "tabs": [
+            "description": "Main product documentation - v2.0",
+            "groups": [
               {
-                "tab": "Guides",
-                "groups": [
+                "group": "Guides",
+                "pages": [
                   {
                     "group": "Get Started",
                     "pages": [
@@ -162,8 +181,8 @@
                 ]
               },
               {
-                "tab": "API Reference",
-                "groups": [
+                "group": "API Reference",
+                "pages": [
                   {
                     "group": "API Documentation",
                     "pages": [
@@ -176,26 +195,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
