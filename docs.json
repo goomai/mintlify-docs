@@ -154,12 +154,11 @@
       },
       {
         "language": "cn",
-        "products": [
+        "groups": [
           {
-            "product": "Product A",
+            "group": "Product A",
             "icon": "box",
-            "description": "Main product documentation - v2.0",
-            "groups": [
+            "pages": [
               {
                 "group": "Guides",
                 "pages": [
