@@ -28,9 +28,10 @@
         }
       ]
     },
-    "tabs": [
+    "anchors": [
       {
-        "tab": "en",
+        "anchor": "en",
+        "openapi": "api-referencea/openapi.json",
         "products": [
           {
             "product": "Product A",
@@ -153,7 +154,7 @@
         ]
       },
       {
-        "tab": "cn",
+        "anchor": "cn",
         "menu": [
           {
             "item": "Product A",
@@ -218,6 +219,19 @@
       "x": "https://x.com/mintlify",
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
+    }
+  },
+  "integrations": {
+    "gtm": {
+      "tagId": "GTM-NDB4L6DV"
+    }
+  },
+  "fonts": {
+    "heading": {
+      "family": "Open Sans"
+    },
+    "body": {
+      "family": "Open Sans"
     }
   }
 }
